@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Map</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_street_view">StreetViewActivity</string>
+
+    <string name="latitude_label">latitude lable is</string>
+    <string name="longitude_label">Longitude lable is</string>
+    <string name="last_update_time_label">last update time table is</string>
+    <string name="location_updated_message">location is updated</string>
+
+</resources>

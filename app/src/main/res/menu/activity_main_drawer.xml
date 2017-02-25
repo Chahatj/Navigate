@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/nav_normal"
+            android:icon="@drawable/normal"
+            android:title="Normal" />
+        <item
+            android:id="@+id/nav_hybrid"
+            android:icon="@drawable/hybrid"
+            android:title="Hybrid" />
+        <item
+            android:id="@+id/nav_satellite"
+            android:icon="@drawable/satellite"
+            android:title="Satellite" />
+        <item
+            android:id="@+id/nav_terrain"
+            android:icon="@drawable/terrain"
+            android:title="Terrain" />
+        <item
+            android:id="@+id/nav_none"
+
+            android:title="None" />
+        <item
+            android:id="@+id/nav_streetview"
+            android:icon="@drawable/street"
+            android:title="StreetView" />
+
+        <item
+            android:id="@+id/nav_navigation"
+            android:icon="@drawable/navigate"
+            android:title="Navigate" />
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/PickPlace"
+            android:title="Pick Place"/>
+
+        <item
+            android:id="@+id/CurrentPlace"
+            android:title="Your Place"/>
+
+
+    </group>
+
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chahat.map">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mapicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        android:name="android.support.multidex.MultiDexApplication">
+
+    >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainNavigateActivity"></activity>
+        <activity android:name=".MapNavigateActivity"
+                    android:parentActivityName=".MainNavigateActivity"
+            >
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.API_KEY"
+            android:value=" AIzaSyD_mB7uVr8Q5Q9LeMpa55VN9L4MC607EAY  " />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value=" AIzaSyBkDhbiCf3A4mJ1gxM5tVkYvUi6ui98Dpo "/>
+
+        <activity android:name=".StreetView"></activity>
+    </application>
+
+</manifest>
